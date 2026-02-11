@@ -7,4 +7,11 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="src\DesignPattern\Behavioural\ChainOfResponsibility\" />
+    <Folder Include="src\DesignPattern\Behavioural\Mediator\" />
+    <Folder Include="src\DesignPattern\Behavioural\Observer\" />
+    <Folder Include="src\DesignPattern\Creational\" />
+  </ItemGroup>
+
 </Project>

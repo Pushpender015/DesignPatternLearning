@@ -1,0 +1,27 @@
+----- Structural Design Pattern -----
+
+deifne : How classes and object are connected and composed to form larger, flexible structure
+	
+	Note : they don't create objects ( that's creational )
+		 : they don't manages behaviour ; communication ( that's behavioural )
+
+	Q. what problem SP solve ?
+		- you wrap existing classes 
+		- you connect incompatible classes 
+		- you add features without changing code
+		- you simplify complex subsystems.
+
+	# They help you follow:
+		SRP , OCP , DIP , Loose Coupling
+
+	# Real-Life Analogy + Mapping
+		Universal Power Adapter
+
+		Different countries have different sockets.
+		Your charger won’t fit. So you use an adapter.
+
+		You don’t change:
+		your charger , the wall socket - You just wrap the connection.
+
+		This is the core idea of structural patterns:
+			Wrap, connect, extend — without changing existing code.

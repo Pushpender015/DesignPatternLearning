@@ -1,0 +1,43 @@
+------ PROTOTYPE DESIGN PATTERN (Creational) ------
+
+	# WHAT IS PROTOTYPE PATTERN?
+
+		The Prototype Pattern is a creational design pattern that allows you to create new objects by cloning an existing object, instead of creating from scratch.
+
+		In simple words:
+			“Create new object by copying an existing one.”
+
+	# WHAT PROBLEM ARISES WITHOUT PROTOTYPE?
+
+		Creating objects is expensive (DB, API, config)
+		Initialization logic repeated
+		Performance issues
+
+	# Example
+		Loading game characters with heavy textures repeatedly.
+
+	# WHAT PROBLEM DOES PROTOTYPE SOLVE?
+
+		Clones existing object
+		Avoids heavy creation
+		Improves performance
+		Allows dynamic object creation
+
+	# REAL LIFE ANALOGY
+
+		Photocopy Machine
+		Instead of writing again, you copy.
+
+	# ADVANTAGES
+
+		Fast object creation
+		Avoids complex initialization
+
+	# DISADVANTAGES
+
+		Deep copy is tricky
+		Circular references
+
+	# COMMON MISTAKES
+
+		Shallow copy when deep is needed

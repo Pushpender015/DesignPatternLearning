@@ -1,0 +1,73 @@
+----- BRIDGE DESIGN PATTERN (Structural) ------
+
+	# WHAT IS BRIDGE PATTERN?
+		- The Bridge Pattern is a structural design pattern that separates abstraction from implementation so that both can change independently.
+
+	In simple words:
+		-Bridge splits a big class or inheritance hierarchy into two parts:
+
+	 => Abstraction (what to do) , Implementation (how to do)
+
+	They are connected using composition, not inheritance.
+
+	So instead of:
+		Big inheritance trees
+	We use:
+		Interface + reference to implementation 
+
+	# WHAT PROBLEM ARISES WITHOUT BRIDGE?
+		- We create large inheritance hierarchies
+
+		- Every new feature multiplies classes
+
+		- Code becomes rigid
+
+	# Example
+
+		RemoteTV
+		RemoteRadio
+		AdvancedRemoteTV
+		AdvancedRemoteRadio
+
+		For every new device ? more subclasses
+
+	# WHAT PROBLEM DOES BRIDGE SOLVE?
+
+		Bridge allows:
+		
+		Changing abstraction without touching implementation
+
+		Changing implementation without touching abstraction
+
+		Avoiding class explosion
+
+		Following OCP & DIP
+
+	# REAL LIFE ANALOGY
+
+		Remote Control + Devices
+
+		Remote = Abstraction
+		TV / Radio = Implementation
+
+		You can change the remote OR device independently.
+
+	# ADVANTAGES
+
+		Reduces class explosion
+
+		Independent changes
+
+		Loose coupling
+
+	# DISADVANTAGES
+
+		More classes
+
+		Hard to understand initially
+
+	# COMMON MISTAKES
+
+		Using inheritance instead of composition
+
+		Not separating abstraction & implementation

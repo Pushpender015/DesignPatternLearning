@@ -1,0 +1,60 @@
+----- CREATIONAL DESIGN PATTERNS (Concept) -----
+
+	# WHAT ARE CREATIONAL DESIGN PATTERNS?
+		Creational Design Patterns focus on how objects are created in a system.
+		They do not create objects directly using new everywhere.
+		Instead, they control and manage object creation logic.
+
+	In simple words:
+		“Creational patterns decide how and when objects should be created.”
+
+	They separate:
+		Object creation
+		Object usage
+		- So client code does NOT depend on concrete classes.
+
+	# WHAT PROBLEM ARISES WITHOUT CREATIONAL PATTERNS?
+
+		Code uses new everywhere
+		Tight coupling to concrete classes
+		Hard to change object type
+		Hard to test
+			- If database changes ? change everywhere.
+
+	# WHAT PROBLEM DO CREATIONAL PATTERNS SOLVE?
+
+		Hide creation logic
+		Reduce tight coupling
+		Support OCP & DIP
+		Make system flexible
+		Allow runtime object selection
+		Client depends on abstraction, not concrete class.
+
+	# REAL LIFE ANALOGY
+
+		( Car Factory )
+		You don’t build engine, tyres, doors manually.
+		You place order ? factory decides how to build.
+		You don’t say new Engine(), you say:
+
+		“Give me a car.”
+
+		That is Creational Pattern thinking.
+
+	# ADVANTAGES
+
+		Loose coupling
+		Centralized creation
+		Easy to change
+		Easy testing
+
+	# DISADVANTAGES
+
+		More classes
+		Slight complexity
+
+	# COMMON MISTAKES
+
+		Still using new in client
+		No abstraction
+		Hardcoding types

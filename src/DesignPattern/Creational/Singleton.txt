@@ -1,0 +1,43 @@
+----- SINGLETON DESIGN PATTERN (Creational) -----
+
+	# WHAT IS SINGLETON PATTERN?
+
+		The Singleton Pattern ensures that a class has only one instance and provides a global access point to that instance.
+
+		In simple words:
+		“Only one object for the whole application.”
+
+	# WHAT PROBLEM ARISES WITHOUT SINGLETON?
+
+		Multiple objects of same resource
+		Data inconsistency
+		Resource wastage
+
+	# Example
+		Multiple database connections.
+
+	# WHAT PROBLEM DOES SINGLETON SOLVE?
+
+		Guarantees one instance
+		Centralized control
+		Controlled access
+
+	# REAL LIFE ANALOGY
+
+		President of a country
+		Only one at a time.
+
+	# ADVANTAGES
+
+		Controlled instance
+		Saves memory
+
+	# DISADVANTAGES
+
+		Global state
+		Hard to test
+
+	# COMMON MISTAKES
+
+		Public constructor
+		Not thread safe

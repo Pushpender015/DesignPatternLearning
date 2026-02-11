@@ -1,0 +1,44 @@
+---- FACADE DESIGN PATTERN (Structural) ----
+
+	# WHAT IS FACADE PATTERN?
+		The Facade Pattern is a structural design pattern that provides a simple interface to a complex subsystem.
+
+		In simple words:
+
+		Facade is a front desk that hides internal complexity.
+		Client talks only to Facade, not to all subsystems.
+
+	# WHAT PROBLEM ARISES WITHOUT FACADE?
+		
+		Client must call many subsystem classes
+		Client knows internal workflow
+		Tight coupling
+		Hard to change
+
+	# WHAT PROBLEM DOES FACADE SOLVE?
+
+		Hides complexity
+		Reduces coupling
+		Improves readability
+		Simplifies usage
+
+	# REAL LIFE ANALOGY
+
+		( Hotel Reception )
+		Guest ? Reception ? Housekeeping, Kitchen, Security
+		Guest doesn’t know internal systems.
+
+	# ADVANTAGES
+
+		Simple API
+		Loose coupling
+		Easy to use
+
+	# DISADVANTAGES
+
+		Facade can become god class
+
+	# COMMON MISTAKES
+
+		Putting business logic in facade
+		Too many responsibilities

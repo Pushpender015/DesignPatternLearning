@@ -1,0 +1,45 @@
+----- FACTORY DESIGN PATTERN (Creational) -----
+
+	# WHAT IS FACTORY PATTERN?
+
+		The Factory Pattern is a creational design pattern that provides a method to create objects without exposing the creation logic to the client.
+
+		In simple words:
+
+			“Client asks factory for object instead of using new.”
+			The factory decides which object to create.
+
+	# WHAT PROBLEM ARISES WITHOUT FACTORY?
+
+		- Client uses new directly
+		- Code becomes tightly coupled
+		- Hard to add new types
+		- Violates OCP
+
+	# WHAT PROBLEM DOES FACTORY SOLVE?
+
+		- Hides object creation
+		- Reduces coupling
+		- Centralizes logic
+		- Supports OCP
+
+	# REAL LIFE ANALOGY
+
+		( Vehicle Factory )
+		You say: “Give me a bike”
+		Factory decides how to build it.
+
+	# ADVANTAGES
+
+		Loose coupling
+		Central creation
+		Easy extension
+
+	# DISADVANTAGES
+
+		Factory grows with many if-else
+		 
+	# COMMON MISTAKES
+
+		Hardcoding strings
+		Big switch-case

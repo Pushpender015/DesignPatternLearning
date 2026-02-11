@@ -1,0 +1,46 @@
+--- PROXY DESIGN PATTERN (Structural) ----
+
+	WHAT IS PROXY PATTERN?
+		The Proxy Pattern is a structural design pattern that provides a placeholder or surrogate for another object to control access to it.
+
+	In simple words:
+		A Proxy acts like a gatekeeper for the real object.
+		Client talks to proxy, proxy decides whether to forward the request.
+
+	# WHAT PROBLEM ARISES WITHOUT PROXY?
+
+		Client accesses real object directly
+		No control over heavy, sensitive, or remote objects
+		No security, caching, logging, lazy loading
+
+	# WHAT PROBLEM DOES PROXY SOLVE?
+
+		Proxy allows:
+		Lazy loading
+		Access control
+		Logging & caching
+		Remote access
+		It protects the real object.
+
+	# REAL LIFE ANALOGY
+
+		Security Guard
+		You (client) ? Guard (proxy) ? CEO (real object)
+		You cannot directly meet CEO.
+
+	# ADVANTAGES
+
+		Lazy loading
+		Security
+		Logging
+		Access control
+
+	# DISADVANTAGES
+
+		Extra layer
+		Performance overhead
+
+	# COMMON MISTAKES
+
+		Proxy doing real work
+		Not sharing interface

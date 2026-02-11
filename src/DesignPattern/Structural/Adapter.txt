@@ -1,0 +1,24 @@
+------ Adapter pattern ------
+
+	Define : The Adapter Pattern allows two incompatible interfaces to work together by using a wrapper class.
+				It acts as a bridge between old and new systems.
+
+		In simple words:
+			- “Convert one interface into another that client expects.”
+
+		# What problem does this pattern solve?
+			- Wrap old system
+			- Provide new interface
+			- No code changes to old class
+			- Loose coupling
+
+		# Real-Life Analogy + Mapping
+			Mobile Charger Adapter
+			Real Life				Code
+			Socket					Client
+			Old charger				Adaptee
+			Adapter					Adapter
+			New phone				Target interface
+
+
+

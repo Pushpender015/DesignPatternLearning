@@ -1,0 +1,28 @@
+------ Composite Structural pattern ------
+
+Define : This is structural design pattern that enables the creation of tree-like structures
+			to represent collection of objects, where both individual object and 
+			groups of objects are treated in unfited manner.
+
+	It creates a tree structure where:
+		Leaf = single object
+		Composite = group of objects
+			- Both follow the same interface.
+
+	Q. what problem solve this pattern ??
+		- same interface for all nodes.
+		- client doesn't care if it is a single or group
+		- Easy to add new types
+		- Clean tree traversal
+
+	# Real-Life Analogy + Mapping
+		File System
+		Real Life			Code
+		File				Leaf
+		Folder				Composite
+		Size()				Operation
+
+		Both File & Folder support GetSize().
+
+	
+

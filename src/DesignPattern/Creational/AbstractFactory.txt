@@ -1,0 +1,50 @@
+----- ABSTRACT FACTORY DESIGN PATTERN (Creational) -----
+
+	# WHAT IS ABSTRACT FACTORY PATTERN?
+
+	The Abstract Factory Pattern provides an interface to create families of related objects without specifying their concrete classes.
+
+	In simple words:
+		“Factory of factories.”
+		It is used when:
+		Objects belong to a group (family)
+		You want to ensure matching objects are created together.
+
+	# WHAT PROBLEM ARISES WITHOUT ABSTRACT FACTORY?
+
+		Client must know which concrete factory to use
+		Risk of mixing incompatible objects
+		Tight coupling
+
+	# Example
+		Creating WindowsButton with MacCheckbox.
+
+	# WHAT PROBLEM DOES ABSTRACT FACTORY SOLVE?
+
+		Abstract Factory:
+		Ensures compatible products
+		Hides concrete classes
+		Supports OCP
+		Decouples client
+
+	# REAL LIFE ANALOGY
+
+		( Furniture Factory )
+		ModernFactory ? ModernChair, ModernTable
+		ClassicFactory ? ClassicChair, ClassicTable
+		You never mix styles.
+
+	# ADVANTAGES
+
+		Consistency
+		Loose coupling
+		Easy to switch families
+
+	# DISADVANTAGES
+
+		Hard to add new product type
+
+	# COMMON MISTAKES
+
+		Mixing families
+		Too many interfaces

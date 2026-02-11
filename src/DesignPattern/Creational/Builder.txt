@@ -1,0 +1,58 @@
+------ BUILDER DESIGN PATTERN (Creational) -----
+
+	# WHAT IS BUILDER PATTERN?
+
+		The Builder Pattern is a creational design pattern used to construct complex objects step-by-step.
+
+		It separates:
+			How an object is built
+			from
+			How it is represented
+
+		In simple words:
+			“Build a complex object step by step.”
+
+	# WHAT PROBLEM ARISES WITHOUT BUILDER?
+
+		Constructors with many parameters
+		Confusing object creation
+		Hard to maintain
+
+	# Example
+
+		new House("2BHK", true, true, false, true);
+		   - Nobody knows what true/false means
+
+	# WHAT PROBLEM DOES BUILDER SOLVE?
+
+		Creates readable object creation
+		Avoids telescoping constructors
+		Allows different representations
+		Improves clarity
+
+	# REAL LIFE ANALOGY
+
+		( Burger Order )
+
+			You choose:
+			Bun
+			Patty
+			Cheese
+			Sauce
+				- Chef builds step by step.
+
+	# ADVANTAGES
+
+		Step-by-step creation
+		Clear code
+		Multiple representations
+	
+	# DISADVANTAGES
+
+		More classes
+		Complex for simple objects
+
+	# COMMON MISTAKES
+
+		Mixing product & builder
+		Skipping director logic

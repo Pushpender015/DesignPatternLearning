@@ -1,0 +1,44 @@
+------ DECORATOR DESIGN PATTERN (Structural) ------
+
+	# WHAT IS DECORATOR PATTERN?
+
+		The Decorator Pattern is a structural design pattern that lets you add new behavior to an object at runtime by wrapping it, without changing its class.
+
+	In simple words:
+		“Attach extra features to an object dynamically.”
+		Decorator follows Open/Closed Principle.
+
+	# WHAT PROBLEM ARISES WITHOUT DECORATOR?
+
+		You create many subclasses for every feature
+		Class explosion happens
+		Hard to maintain
+
+	# WHAT PROBLEM DOES DECORATOR SOLVE?
+
+		Adds behavior dynamically
+		Avoids subclass explosion
+		Supports combination of features
+		Follows OCP
+
+	# REAL LIFE ANALOGY
+
+		( Pizza toppings )
+		Base Pizza ? Add cheese ? Add olives ? Add sauce
+		Each topping wraps the previous one.
+
+	# ADVANTAGES
+
+		Flexible
+		No subclass explosion
+		Open/Closed
+
+	# DISADVANTAGES
+
+		Many small objects
+		Hard debugging
+
+	# COMMON MISTAKES
+
+		Not using same interface
+		Not wrapping correctly

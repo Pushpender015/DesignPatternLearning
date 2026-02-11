@@ -1,0 +1,48 @@
+---- FLYWEIGHT DESIGN PATTERN (Structural) ----
+
+	# WHAT IS FLYWEIGHT PATTERN?
+		The Flyweight Pattern is a structural design pattern used to reduce memory usage by sharing common object data among many objects.
+
+	In simple words:
+		Instead of creating thousands of heavy objects,
+		you share common parts and store only unique data separately.
+
+	# WHAT PROBLEM ARISES WITHOUT FLYWEIGHT?:
+
+		Thousands of similar objects
+		High memory usage
+		Performance issues
+
+	# Example
+		Creating 1 million tree objects with same texture, color, model.
+
+	# WHAT PROBLEM DOES FLYWEIGHT SOLVE?
+
+		Flyweight splits object state into:
+		Intrinsic state ? shared, common
+		Extrinsic state ? unique, passed from outside
+		So memory is saved by sharing intrinsic data.
+
+	# REAL LIFE ANALOGY
+
+		( Text Editor Characters )
+		Each 'A' shares:
+		Font
+		Shape
+		But position (row, column) is unique.
+
+	# ADVANTAGES
+
+		Saves memory
+		Improves performance
+		Efficient for large objects
+
+	# DISADVANTAGES
+
+		Complex logic
+		Must manage extrinsic state carefully
+
+	# COMMON MISTAKES
+
+		Sharing mutable data
+		Storing extrinsic state inside flyweight
